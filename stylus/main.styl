@@ -20,6 +20,12 @@ img
 figure
 	margin 0
 
+h1,h2,h3,h4,h5,h6
+	color DarkGrayishBlue
+
+p
+	color GrayishBlue
+
 .header
 	width 100%
 	display flex
@@ -37,11 +43,13 @@ figure
 			margin-left auto
 			margin-right auto
 			max-width 250px
+			color DarkGrayishBlue
 		&__p
 			margin-left auto
 			margin-right auto
 			max-width 308px
 			color GrayishBlue
+			margin-bottom SpacingMedium
 	&__buttons-container
 		display flex
 		flex-direction column
@@ -52,4 +60,29 @@ figure
 			button(StrongCyan)
 		.secondary__button
 			button(LightBlue)
-		
+
+.keepsnippets
+	display flex
+	flex-direction column
+	padding 0 30px
+	text-align center
+	max-width 350px
+	margin-left auto
+	margin-right auto
+	&__intro
+		margin-bottom SpacingMedium
+	&__description
+		&__text-item
+			margin-bottom SpacingMedium
+
+@media screen and (min-width 768px)
+	.header
+		background-image url('../images/bg-header-desktop.png')
+		&__article
+			&__h1
+				max-width 100%
+			&__p
+				max-width 550px
+		&__buttons-container
+			flex-direction row
+			max-width 350px
