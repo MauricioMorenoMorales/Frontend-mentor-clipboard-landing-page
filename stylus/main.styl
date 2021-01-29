@@ -1,0 +1,60 @@
+@import './_tokens.styl'
+
+html
+	box-sizing border-box
+	font-family FontFamily
+	font-size FtontSizeNormal
+	scroll-behavior smooth
+
+*,*:before,*:after
+	box-sizing inherit
+
+body
+	margin 0
+	overflow-x hidden
+
+img
+	max-width 100%
+	height auto
+
+figure
+	margin 0
+
+.header
+	width 100%
+	display flex
+	flex-direction column
+	align-items center
+	align-items center
+	text-align center
+	padding-top 150px
+	background-image: url('../images/bg-header-mobile.png');
+	background-position top
+	background-repeat no-repeat
+	background-size 100%
+	&__article
+		&__h1
+			margin-left auto
+			margin-right auto
+			max-width 250px
+		&__p
+			margin-left auto
+			margin-right auto
+			max-width 308px
+			color GrayishBlue
+	&__buttons-container
+		display flex
+		flex-direction column
+		align-items center
+		width 100%
+		max-width 308px
+		.primary__button
+			margin-bottom 20px
+			width 80%
+			height 40px
+			border-radius 50px
+			border none
+			background-color StrongCyan
+			color white
+			font-weight FontWeightBold
+
