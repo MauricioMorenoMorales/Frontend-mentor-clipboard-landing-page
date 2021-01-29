@@ -60,4 +60,16 @@ figure {
   background-color: #26baa4;
   color: #fff;
   font-weight: 400;
+  box-shadow: 0px 3px #1d907f;
+}
+.header__buttons-container .secondary__button {
+  margin-bottom: 20px;
+  width: 80%;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: #6173ff;
+  color: #fff;
+  font-weight: 400;
+  box-shadow: 0px 3px #2e46ff;
 }
