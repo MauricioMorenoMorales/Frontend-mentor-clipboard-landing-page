@@ -86,12 +86,33 @@ p
 	max-width 370px
 	margin-left auto
 	margin-right auto
+	margin-bottom SpacingMedium
 	&__intro
 		h3
 			max-width 200px
 			margin 0 auto
 		&__figure
 			margin-bottom SpacingLong
+
+.benefits
+	display flex
+	flex-direction column
+	padding 0 30px
+	text-align center
+	max-width 370px
+	margin-left auto
+	margin-right auto
+	&__item
+		margin-bottom SpacingSmall
+
+.companies
+	display flex
+	flex-direction column
+	width 100%
+	align-items center
+	margin-bottom SpacingLong
+	figure
+		margin SpacingSmall
 
 @media screen and (min-width 768px)
 	.header
@@ -129,3 +150,16 @@ p
 		&__intro
 			h3
 				max-width 400px
+
+	.benefits
+		flex-direction row
+		justify-content space-between
+		max-width 900px
+		&__item
+			margin 0 SpacingSmall SpacingMedium
+
+	.companies
+		flex-direction row
+		max-width 900px
+		margin-left auto
+		margin-right auto
