@@ -103,12 +103,16 @@ p {
 .keepsnippets__description__text-item {
   margin-bottom: 50px;
 }
+.keepsnippets__description__text-item h4 {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .header {
     background-image: url("../images/bg-header-desktop.png");
   }
   .header__article__h1 {
     max-width: 100%;
+    margin-bottom: 5px;
   }
   .header__article__p {
     max-width: 550px;
@@ -116,5 +120,27 @@ p {
   .header__buttons-container {
     flex-direction: row;
     max-width: 350px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .keepsnippets {
+    padding: 0;
+    width: 100%;
+    max-width: 1400px;
+  }
+  .keepsnippets__intro {
+    max-width: 600px;
+    margin: 0 auto 50px;
+  }
+  .keepsnippets__description {
+    margin-left: -360px;
+    display: flex;
+    text-align: start;
+    justify-content: center;
+  }
+  .keepsnippets__description__text-container {
+    max-width: 350px;
+    margin-left: 100px;
+    margin-top: 50px;
   }
 }

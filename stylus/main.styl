@@ -74,6 +74,8 @@ p
 	&__description
 		&__text-item
 			margin-bottom SpacingMedium
+			h4
+				margin-bottom 0
 
 @media screen and (min-width 768px)
 	.header
@@ -81,8 +83,28 @@ p
 		&__article
 			&__h1
 				max-width 100%
+				margin-bottom 5px
 			&__p
 				max-width 550px
 		&__buttons-container
 			flex-direction row
 			max-width 350px
+	
+
+@media screen and (min-width 900px)
+	.keepsnippets
+		padding 0
+		width 100%
+		max-width 1400px
+		&__intro
+			max-width 600px
+			margin 0 auto SpacingMedium
+		&__description
+			margin-left -360px
+			display flex
+			text-align start
+			justify-content center
+			&__text-container
+				max-width 350px
+				margin-left 100px
+				margin-top SpacingMedium
