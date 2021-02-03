@@ -317,4 +317,29 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+  .footer {
+    text-align: start;
+    display: flex;
+    justify-content: center;
+  }
+  .footer__right {
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-right: 150px;
+  }
+  .footer__right__figure {
+    margin: 0;
+    margin-right: 50px;
+  }
+  .footer__right__link {
+    margin: 15px 0 50px 50px;
+  }
+  .footer__right__link a {
+    margin: 0 0 7px 0;
+  }
+  .footer__left {
+    width: 200px;
+    margin: 70px 0;
+  }
 }
