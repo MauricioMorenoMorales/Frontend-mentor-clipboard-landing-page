@@ -1,5 +1,5 @@
 function autoScroll() {
-	var div = document.querySelector('.clipboard')
+	var div = document.querySelector('.footer')
 	div.style.display = ''
 	var top = div.offsetTop
 	if (window.scrollTop != top) window.scrollTo(0, top)

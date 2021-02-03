@@ -5,6 +5,7 @@ html
 	font-family FontFamily
 	font-size FtontSizeNormal
 	scroll-behavior smooth
+	font-size 62.5%
 
 *,*:before,*:after
 	box-sizing inherit
@@ -12,6 +13,7 @@ html
 body
 	margin 0
 	overflow-x hidden
+	font-size 1.8rem
 
 img
 	max-width 100%
@@ -25,6 +27,12 @@ h1,h2,h3,h4,h5,h6
 
 p
 	color GrayishBlue
+
+a
+	color DarkGrayishBlue
+	text-decoration none
+	&:hover
+		text-decoration underline
 
 .header
 	width 100%
@@ -131,6 +139,29 @@ p
 		&__item--secondary
 			button(LightBlue)
 
+.footer
+	text-align center
+	background-color FooterBackground
+	margin-top SpacingLong
+	&__right
+		display flex
+		flex-direction column
+		&__figure
+			margin-top SpacingLong
+			margin-bottom SpacingMedium
+			&__image
+				width 70px
+		&__link
+			display flex
+			flex-direction column
+			a
+				margin-bottom SpacingSmall
+	&__left
+		display flex
+		justify-content space-between
+		max-width 150px
+		margin SpacingSmall auto 0
+		padding-bottom SpacingMedium
 
 @media screen and (min-width 768px)
 	.header
