@@ -1,0 +1,65 @@
+@import './_tokens.styl'
+
+@media screen and (min-width 900px)
+	.keepsnippets
+		padding 0
+		width 100%
+		max-width 1400px
+		&__intro
+			max-width 600px
+			margin 0 auto SpacingMedium
+		&__description
+			margin-left -360px
+			display flex
+			text-align start
+			justify-content center
+			&__text-container
+				max-width 350px
+				margin-left 100px
+				margin-top SpacingMedium
+
+	.description
+		max-width 700px
+		&__intro
+			h3
+				max-width 400px
+
+	.benefits
+		flex-direction row
+		justify-content space-between
+		max-width 900px
+		&__item
+			margin 0 SpacingSmall SpacingMedium
+
+	.companies
+		flex-direction row
+		max-width 900px
+		margin-left auto
+		margin-right auto
+	.clipboard
+		max-width 700px
+		&__buttons
+			flex-direction row
+			max-width 350px
+			margin-left auto
+			margin-right auto
+
+	.footer
+		text-align start
+		display flex
+		justify-content center
+		&__right
+			flex-direction row
+			padding-top SpacingMedium
+			padding-bottom SpacingMedium
+			margin-right 150px
+			&__figure
+				margin 0
+				margin-right SpacingMedium
+			&__link
+				margin 15px 0 SpacingMedium SpacingMedium
+				a
+					margin 0 0 7px 0
+		&__left
+			width 200px
+			margin 70px 0
